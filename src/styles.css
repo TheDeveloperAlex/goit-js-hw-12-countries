@@ -1,0 +1,56 @@
+body {
+  background-color: blanchedalmond;
+}
+.form {
+  display: flex;
+  justify-content: center;
+}
+
+.input {
+  width: 500px;
+  height: 50px;
+  font-size: 25px;
+  /* margin: 0, auto; */
+}
+
+.name_contry {
+  font-size: 85px;
+  text-align: center;
+}
+
+.description {
+  display: flex;
+  justify-content: space-around;
+}
+
+.ul {
+  padding: 0;
+}
+
+.description_paragraph {
+  list-style: none;
+  font-size: 55px;
+  /* font-weight: bold; */
+
+  /* padding: 0; */
+}
+.description_paragraph:not(:last-child) {
+  margin-bottom: 40px;
+}
+
+.description_paragraph-header {
+  font-weight: bold;
+}
+
+.languages-list {
+  padding-left: 80px;
+}
+
+.languages-list_item {
+  font-size: 55px;
+}
+
+.flag_img {
+  width: 740px;
+  height: 550px;
+}
