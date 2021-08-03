@@ -65,7 +65,16 @@ inputNode.addEventListener(
                 
                 document.querySelector('#card').innerHTML = cardTpl(data[0])
             }
-            
+            if (data.status === 404) {
+                error({
+                        text: "Incorect text. Try again!",
+                        stack: new Stack({
+                            dir1: 'down', dir2: 'right', // Position from the top left corner.
+                            firstpos1: 90, firstpos2: 90 // 90px from the top, 90px from the left.
+                        })
+                        });
+            }
+            console.log(data.status);
         });
     }, 500)
     
